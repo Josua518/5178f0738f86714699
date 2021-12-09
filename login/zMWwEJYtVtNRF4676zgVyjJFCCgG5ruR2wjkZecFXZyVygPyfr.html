@@ -1,0 +1,92 @@
+<!-- Angel -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" href="../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/app.css">
+  <link rel="shortcut icon" href="../assets/images/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar navbar-light">
+    <div class="container d-block">
+      <a href="../"><i class="bi bi-chevron-left"></i></a>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="container">
+    <section class="section">
+      <form name="login">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Login</h4>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Student Name</label>
+                  <input type="text" class="form-control" placeholder="Angel nathania edbert" name="userid" disabled>
+                  <p>
+                    <small class="text-muted">This input is auto input, cannot be edited</small>
+                  </p>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="pswrd">
+                </div>
+
+                <input class="btn btn-primary mt-2" type="button" onclick="check(this.form)" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <br>
+      <div class="container">
+      <div class="container">
+      <footer>
+        <div class="footer clearfix mb-0 text-muted">
+          <div class="float-start">
+            <p>
+              2021 &copy; Dasi Gantung
+            </p>
+          </div>
+          <div class="float-end">
+            <p>
+              Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="developer/">Josua</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/mazer.js"></script>
+  <script language="javascript">
+    function check(form) {
+
+      if (form.userid.value == "" && form.pswrd.value == "atan") {
+        alert("You have successfully logged in.");
+        window.location.href = '../student/angel.html';
+      } else
+      {
+        alert("Wrong Password")
+      }
+    }
+  </script>
+</body>
+
+</html>
